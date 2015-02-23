@@ -1,0 +1,50 @@
+﻿@model IEnumerable<EAD_PROJECT_MVC.Models.Product>
+
+@{
+    ViewBag.Title = "GetListOfProduct";
+    Layout = "~/Views/Shared/CRUDAdminLayout.cshtml";
+}
+
+<h2>GetListOfProduct</h2>
+ 
+<table>
+    <tr>
+        <th style="margin-right:500px">
+            @Html.DisplayNameFor(model => model.PID)
+        </th>
+        <th style="margin-right:500px">
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Catagory)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.price)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td style="margin-right:500px">
+            @Html.DisplayFor(modelItem => item.PID)
+        </td>
+        <td style="margin-right:500px">
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Catagory)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.price)
+        </td>
+         </tr>
+}
+
+</table>

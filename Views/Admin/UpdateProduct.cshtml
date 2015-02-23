@@ -1,0 +1,20 @@
+﻿@model EAD_PROJECT_MVC.Models.Product
+
+@{
+    ViewBag.Title = "UpdateProduct";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h2>UpdateProduct</h2>
+
+<form action="/Admin/UpdateProductConform/@Model.PID" method="post">
+    Name:<input type="text" name="Name"  class="form-control" value="@Model.Name" />
+    Price<input type="text" name="price"  class="form-control" value="@Model.price" />
+    Type<input type="text" name="Type"  class="form-control" value="@Model.Type" />
+    Image<input type="text" name="Imgae"  class="form-control" value="@Model.Imgae" />
+    Catagory<input type="text" name="Catagory"  class="form-control" value="@Model.Catagory" />
+    IconImage<input type="text" name="iconImage" class="form-control" value="@Model.iconImage" />
+    Desciption<input type="text" name="Desciption" class="form-control" value="@Model.Desciption" />
+    <a><input type="submit" value="Update Product" /></a>
+
+</form>

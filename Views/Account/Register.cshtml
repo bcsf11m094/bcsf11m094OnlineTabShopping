@@ -1,0 +1,102 @@
+﻿@model EAD_PROJECT_MVC.Models.User
+
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_header_footer.cshtml";
+}
+
+
+@*@using (Html.BeginForm()) {*@
+<div id="checking">Checking...</div>
+<div class="row" id="login_div" >
+    <div class="col-md-offset-3 col-md-6" >
+
+        <form method="post" id="form-login" action="/Account/Register" style="color:green">
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true)
+
+            @if (ViewBag.Message != null)
+            {
+                <div style="color:yellow ">
+                    @ViewBag.Message;
+                </div>
+            }
+
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Name)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Name)
+                
+                <input type="button" id="b1" value="Check" />
+                @Html.ValidationMessageFor(model => model.Name)
+                <div id="result"></div>
+                @Scripts.Render("~/bundles/jquery")
+                <script>
+
+                    $(document).ready(function () {
+
+                        $('#checking').hide();
+
+                        $('#b1').click(function () {
+
+                            var Name = $('#Name').val();
+
+                          
+                            $('#checking').show();
+                            $.getJSON("/Account/CheckUserName?Name=" + Name, function (data) {
+                                $('#checking').hide();
+                                if (data == false) {
+                                    $('#result').text("User Name is already exists ");
+
+                                }
+                                else {
+                                    $('#result').text("User Name is available");
+                                }
+                            });
+
+                        });
+
+                    });
+                </script>
+                
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Email)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Email)
+                @Html.ValidationMessageFor(model => model.Email)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Password)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Password)
+                @Html.ValidationMessageFor(model => model.Password)
+            </div>
+
+            @*<div class="editor-label">
+                    @Html.LabelFor(model => model.ConformPassword)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.ConformPassword)
+                    @Html.ValidationMessageFor(model => model.ConformPassword)
+                </div>*@
+
+            <p>
+                <input type="submit" value="Create" />
+            </p>
+
+
+        </form>
+
+    </div>
+</div>
+
+
+
+
+    

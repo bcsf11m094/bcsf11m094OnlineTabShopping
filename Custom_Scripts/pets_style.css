@@ -1,0 +1,26 @@
+﻿#first_pet_name, #catogery_name {
+    margin-top:40px;
+    font-size:30px;
+    margin-bottom:40px;
+}
+
+
+#row1-sidebar {
+    background-color:darkgreen;
+}
+
+#row1-sidebar-item1, #row1-sidebar-item2,
+#row1-sidebar-item3, #row1-sidebar-item4,
+#row1-sidebar-item5 {
+    font-size:20px;
+    margin-left:50px;
+    color:yellowgreen;
+}
+
+.active {
+    background-color:white;
+}
+
+#image {
+    margin-top:40px;
+}

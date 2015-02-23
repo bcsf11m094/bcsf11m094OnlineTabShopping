@@ -1,0 +1,173 @@
+﻿@{
+    ViewBag.Title = "Header_footer";
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>RJTAB</title>
+    <link href="@Url.Content("~/Content/bootstrap.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/bootstrap.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/bootstrap-theme.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Custom_Scripts/index_style.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Custom_Scripts/pets_style.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Custom_Scripts/login_style.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Custom_Scripts/details_style.css")" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/jquery-2.1.3,min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Custom_Scripts/login_signup.js"></script>
+    <script src="~/Custom_Scripts/Changings.js"></script>
+
+</head>
+
+<body id="layout">
+
+    <header class="page-header" id="header-page">
+        <div class="row" id="headre-row" style="margin-bottom:20px">
+            
+            <div class="col-md-3 col-md-offset-2">
+
+                <form role="form" class="block-search">
+
+                    <div class="input-group">
+
+                        <input type="text" id="search" class="form-control" placeholder="Search.." />
+                        <span class="input-group-btn">
+                            <button id="search-btn" class="btn btn-primary-very-light search-button" type="button"><span class="icon glyphicon glyphicon-search"></span></button>
+                        </span>
+
+                    </div>
+                </form>
+            </div>
+
+           
+                <div class="col-md-2">
+                    <ul style="margin-top:45px">
+                        <li class="dropdown">
+                            <a id="list-item-21" href="#" data-toggle="dropdown" class="dropdown-toggle" style=" font-size:30px; font-style:initial; margin-top: 30px; color: darkolivegreen;"> @Session["name"] </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <ul class="menu-items">
+                                                <li><a class="btn" id="logout" href="#" onclick="location.href='@Url.Content("~/Admin/logout")'" style=" margin-top:50px; background-color:darkolivegreen; color:white;">LOGOUT <span class="icon glyphicon glyphicon-log-out"></span></a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+
+            
+        </div>
+
+    </header>
+
+    <nav class="collapse navbar-collapse" id="navbar-tab" role="navigation">
+
+        <div>
+            <ul class="nav navbar-nav" id="navbar-tab-list">
+                <li class="item active"> <a href="#" id="list-item-1" onclick="location.href='@Url.Content("~")'"> <span class="icon glyphicon glyphicon-home"></span> Home </a></li>
+                <li class="dropdown">
+                    <a id="list-item-2" href="#" data-toggle="dropdown" class="dropdown-toggle">ADD </a>
+                    <ul class="dropdown-menu" id="drop_list">
+                        <li>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="menu-items">
+                                         <li><a id="puppies_list_i3" href="#" onclick="location.href='@Url.Content("~/Admin/AddUser")'">NewUser</a></li>
+                                        <li><a id="cat_list_i1" href="#" onclick="location.href='@Url.Content("~/Admin/AddProduct")'">NewProduct</a></li>
+                                        @*<li><a id="cat_list_i1" href="#" onclick="location.href='@Url.Content("~/Admin/AddOrder")'">NewOrder</a></li>*@
+
+                                        
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+
+                </li>
+                <li class="dropdown">
+                    <a id="list-item-2" href="#" data-toggle="dropdown" class="dropdown-toggle">Update </a>
+                    <ul class="dropdown-menu" id="drop_list">
+                        <li>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="menu-items">
+                                        <li><a id="puppies_list_i1" href="#" onclick="location.href='@Url.Content("~/Admin/UpdateUserHelper")'">User</a></li>
+                                        <li><a id="puppies_list_i2" href="#" onclick="location.href='@Url.Content("~/Admin/UpdateProductHelper")'">Products</a></li>
+                                        @*<li><a id="puppies_list_i2" href="#" onclick="location.href='@Url.Content("~/Admin/UpdateOrderHelper")'">Orders</a></li>*@
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+
+                </li>
+                <li class="dropdown">
+                    <a id="list-item-2" href="#" data-toggle="dropdown" class="dropdown-toggle">Delete </a>
+                    <ul class="dropdown-menu" id="drop_list">
+                        <li>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="menu-items">
+                                        <li><a id="puppies_list_i1" href="#" onclick="location.href='@Url.Content("~/Admin/DeleteUserHelper")'">User</a></li>
+                                        <li><a id="puppies_list_i2" href="#" onclick="location.href='@Url.Content("~/Admin/DeleteProductHelper")'">Products</a></li>
+                                        @*<li><a id="puppies_list_i2" href="#" onclick="location.href='@Url.Content("~/Admin/DeleteOrderHelper")'">Order</a></li>*@
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+
+                </li>
+                <li class="dropdown">
+                    <a id="list-item-2" href="#" data-toggle="dropdown" class="dropdown-toggle">Display </a>
+                    <ul class="dropdown-menu" id="drop_list">
+                        <li>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="menu-items">
+                                        <li><a id="puppies_list_i1" href="#" onclick="location.href='@Url.Content("~/Admin/GetListOfUsers")'">Users</a></li>
+                                        <li><a id="puppies_list_i2" href="#" onclick="location.href='@Url.Content("~/Admin/GetListOfProduct")'">Products</a></li>
+                                        @*<li><a id="puppies_list_i2" href="#" onclick="location.href='@Url.Content("~/Admin/GetListOfOrder")'">Orders</a></li>*@
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+
+                </li>
+
+
+                
+
+            </ul>
+        </div>
+
+    </nav>
+
+    @RenderBody()
+    <br /><br /><br />
+    <br /><br /><br />
+    <div id="footer" style="margin-top:50px">
+        </div>
+    <script src="~/Scripts/jquery-2.1.3.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Custom_Scripts/login_signup.js"></script>
+    <script src="~/Custom_Scripts/Changings.js"></script>
+</body>
+</html>
+
+
+

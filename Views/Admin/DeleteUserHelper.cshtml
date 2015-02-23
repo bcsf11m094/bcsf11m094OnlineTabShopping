@@ -1,0 +1,48 @@
+﻿@model IEnumerable<EAD_PROJECT_MVC.Models.User>
+
+@{
+    ViewBag.Title = "DeleteUserHelper";
+    Layout = "~/Views/Shared/CRUDAdminLayout.cshtml";
+}
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.UID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Password)
+        </th>
+        <th>Delete User</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.UID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Password)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ConformPassword)
+        </td>
+        <td>
+            <a href="/Admin/DeleteUser/@item.UID">Delete User</a>
+        </td>
+
+        </tr>
+}
+
+</table>

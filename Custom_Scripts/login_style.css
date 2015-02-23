@@ -1,0 +1,49 @@
+﻿
+#form-login{
+    background-color:darkblue;
+    margin-top:150px;
+    margin-bottom:150px;
+}
+
+#form-signup{
+    background-color:darkblue;
+    margin-top:80px;
+    margin-bottom:100px;
+}
+
+#sn-name, #sn-password, #lg-name, #lg-password, #sn-email{
+    margin-top:20px;
+    margin-left:180px;
+    height:45px;
+    width:300px;
+}
+
+#form-label {
+    color:white;
+    font-size:20px;
+    margin-top:50px;
+    margin-left:180px;
+}
+
+#wrong-login {
+    margin-left:180px;
+    margin-top:30px;
+    margin-bottom:50px;
+    color:blue;    
+    background-color:pink;
+}
+#login-request, #signup-request{
+    margin-top:30px;
+    height:40px;
+    color:blue;    
+    background-color:pink;
+    margin-bottom:50px;
+    margin-left:180px;
+}
+
+#signup-request1 {
+    color:white;
+    margin-left:20px;
+    background-color:brown;
+    margin-bottom:20px;
+}

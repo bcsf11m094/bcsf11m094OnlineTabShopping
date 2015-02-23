@@ -1,0 +1,54 @@
+﻿@model IEnumerable<EAD_PROJECT_MVC.Models.Product>
+
+@{
+    ViewBag.Title = "DeleteProducts";
+    Layout = "~/Views/Shared/CRUDAdminLayout.cshtml";
+}
+
+<h2>DeleteProducts</h2>
+
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Catagory)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.price)
+        </th>
+        <th>Delete Product</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Catagory)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.price)
+        </td>
+        <td>
+            <a href="/Admin/DeleteProducts/@item.PID">Delete Product</a>
+        </td>
+
+         </tr>
+}
+
+</table>

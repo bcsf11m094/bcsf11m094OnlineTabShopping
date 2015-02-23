@@ -1,0 +1,88 @@
+﻿@model EAD_PROJECT_MVC.Models.Order
+
+@{
+    ViewBag.Title = "AddOrder";
+    Layout = "~/Views/Shared/CRUDAdminLayout.cshtml";
+}
+
+<h2>AddOrder</h2>
+
+@using (Html.BeginForm("AdditionOfOrder","Admin",FormMethod.Post)) 
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Order</legend>
+
+        
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PID)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PID)
+            @Html.ValidationMessageFor(model => model.PID)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.UID)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.UID)
+            @Html.ValidationMessageFor(model => model.UID)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Quantity)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Quantity)
+            @Html.ValidationMessageFor(model => model.Quantity)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Price)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Price)
+            @Html.ValidationMessageFor(model => model.Price)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.OrderDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.OrderDate)
+            @Html.ValidationMessageFor(model => model.OrderDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CardNo)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CardNo)
+            @Html.ValidationMessageFor(model => model.CardNo)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Mobile)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Mobile)
+            @Html.ValidationMessageFor(model => model.Mobile)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Address)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Address)
+            @Html.ValidationMessageFor(model => model.Address)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+

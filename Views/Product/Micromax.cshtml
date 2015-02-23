@@ -1,0 +1,389 @@
+﻿@model List<EAD_PROJECT_MVC.Models.Product>
+@{
+    ViewBag.Title = "Burmese";
+    Layout = "~/Views/Shared/_header_footer.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-md-offset-1 col-md-3">
+        <label id="first_pet_name"> MicroMax </label>
+        
+    </div>
+
+    <div class="col-md-5">
+        </div>
+</div>
+
+
+<div class="row">
+
+    <div class="col-ms-offset-1 col-md-10 col-md-offset-1">
+        
+        <div class="row">
+
+            <div class="col-md-3">
+
+                <div class="product-item-column">
+                    <div class="product-item-grid-view">
+                        <div class="product-item">
+                            <div class="product-image">
+                                <a href="#" onclick="location.href='@Url.Action("details/"+@Model[0].PID)'">
+                                    <img src="~/@Model[0].Imgae" width="262" height="202" alt="Product" class="center-block img-responsive">
+                                </a>
+                            </div><!-- /.product-image -->
+                            <div class="product-detail text-md-center">
+                                <h3 class="product-name"><a href="#" onclick="location.href='@Url.Action("details/"+@Model[0].PID)'">@Model[0].Name</a></h3>
+                                <p class="product-price"><span class="price">@Model[0].price</span></p>
+                                <p class="specification"><span class="spec">Specificatiions</span></p>
+                                <p class="specification"><span class="spec">1.Processors 1.2 GHZ</span></p>
+                                <p class="specification"><span class="spec">2.Battery </span></p>
+                                <p class="specification"><span class="spec">Use Up to 10 Hrs ,Size  4000mAh </span></p>
+                                <p class="specification"><span class="spec">3.Display  Touch Screen  Yes</span></p>
+                                <p class="specification"><span class="spec">4.1 Internal Memory </span></p>
+                                <p class="specification"><span class="spec">RAM 1.5GB,ROM 8GB</span></p>
+                                <p class="specification"><span class="spec">4.2 External Memory </span></p>
+                                <p class="specification"><span class="spec"> Upto 32GB </span></p>
+                                <p class="specification"><span class="spec">5. Connectivity </span></p>
+                                <p class="specification"><span class="spec"> Wifi Yes BlueTooth Yes</span></p>
+                               
+                            </div><!-- /.product-detail -->
+                           
+                        </div><!-- /.product-item -->
+                    </div><!-- /.product-item-grid-view -->
+                </div>
+
+                <div class="product-item-column">
+                    <div class="product-item-grid-view">
+                        <div class="product-item">
+                            <div class="product-image">
+                                <a href="#" onclick="location.href='@Url.Action("details/"+@Model[1].PID)'">
+                                    <img src="~/@Model[1].Imgae" width="262" height="202" alt="Product" class="center-block img-responsive">
+                                   
+                                </a>
+                            </div><!-- /.product-image -->
+                            <div class="product-detail text-md-center">
+                                <h3 class="product-name"><a href="#" onclick="location.href='@Url.Action("details/"+@Model[1].PID)'">@Model[1].Name</a></h3>
+                                    <p class="specification"><span class="spec">Specificatiions</span></p>
+                                    <p class="specification"><span class="spec">1.Processors 1.2 GHZ</span></p>
+                                    <p class="specification"><span class="spec">2.Battery </span></p>
+                                    <p class="specification"><span class="spec">Use Up to 10 Hrs ,Size  4000mAh </span></p>
+                                    <p class="specification"><span class="spec">3.Display  Touch Screen  Yes</span></p>
+                                    <p class="specification"><span class="spec">4.1 Internal Memory </span></p>
+                                    <p class="specification"><span class="spec">RAM 1.5GB,ROM 8GB</span></p>
+                                    <p class="specification"><span class="spec">4.2 External Memory </span></p>
+                                    <p class="specification"><span class="spec"> Upto 32GB </span></p>
+                                    <p class="specification"><span class="spec">5. Connectivity </span></p>
+                                    <p class="specification"><span class="spec"> Wifi Yes BlueTooth Yes</span></p>
+
+                            </div><!-- /.product-detail -->
+                        </div><!-- /.product-item -->
+                    </div><!-- /.product-item-grid-view -->
+                </div>
+
+                <div class="product-item-column">
+                    <div class="product-item-grid-view">
+                        <div class="product-item">
+                            <div class="product-image">
+                                <a href="#" onclick="location.href='@Url.Action("details/"+@Model[2].PID)'">
+                                    <img src="~/@Model[2].Imgae" width="262" height="202" alt="Product" class="center-block img-responsive">
+
+                                </a>
+                            </div><!-- /.product-image -->
+                            <div class="product-detail text-md-center">
+                                <h3 class="product-name"><a href="#" onclick="location.href='@Url.Action("details/"+@Model[2].PID)'">@Model[2].Name</a></h3>
+                                <p class="product-price"><span class="price">@Model[2].price</span></p>
+                                    <p class="specification"><span class="spec">Specificatiions</span></p>
+                                    <p class="specification"><span class="spec">1.Processors 1.2 GHZ</span></p>
+                                    <p class="specification"><span class="spec">2.Battery </span></p>
+                                    <p class="specification"><span class="spec">Use Up to 10 Hrs ,Size  4000mAh </span></p>
+                                    <p class="specification"><span class="spec">3.Display  Touch Screen  Yes</span></p>
+                                    <p class="specification"><span class="spec">4.1 Internal Memory </span></p>
+                                    <p class="specification"><span class="spec">RAM 1.5GB,ROM 8GB</span></p>
+                                    <p class="specification"><span class="spec">4.2 External Memory </span></p>
+                                    <p class="specification"><span class="spec"> Upto 32GB </span></p>
+                                    <p class="specification"><span class="spec">5. Connectivity </span></p>
+                                    <p class="specification"><span class="spec"> Wifi Yes BlueTooth Yes</span></p>
+
+                            </div><!-- /.product-detail -->
+                        </div><!-- /.product-item -->
+                    </div><!-- /.product-item-grid-view -->
+                </div>
+
+            </div>
+
+            @* ------------------------------------------------------------------------------------------------------------------------------------- *@
+
+            <div class="col-md-3">
+
+                <div class="product-item-column">
+                    <div class="product-item-grid-view">
+                        <div class="product-item">
+                            <div class="product-image">
+                                <a href="#" onclick="location.href='@Url.Action("details/"+@Model[3].PID)'">
+                                    <img src="~/@Model[3].Imgae" width="262" height="202" alt="Product" class="center-block img-responsive">
+                                </a>
+                            </div><!-- /.product-image -->
+                            <div class="product-detail text-md-center">
+                                <h3 class="product-name"><a href="#" onclick="location.href='@Url.Action("details/"+@Model[3].PID)'">@Model[3].Name</a></h3>
+                                <p class="product-price"><span class="price">@Model[3].price</span></p>
+                                <p class="specification"><span class="spec">Specificatiions</span></p>
+                                <p class="specification"><span class="spec">1.Processors 1.2 GHZ</span></p>
+                                <p class="specification"><span class="spec">2.Battery </span></p>
+                                <p class="specification"><span class="spec">Use Up to 10 Hrs ,Size  4000mAh </span></p>
+                                <p class="specification"><span class="spec">3.Display  Touch Screen  Yes</span></p>
+                                <p class="specification"><span class="spec">4.1 Internal Memory </span></p>
+                                <p class="specification"><span class="spec">RAM 1.5GB,ROM 8GB</span></p>
+                                <p class="specification"><span class="spec">4.2 External Memory </span></p>
+                                <p class="specification"><span class="spec"> Upto 32GB </span></p>
+                                <p class="specification"><span class="spec">5. Connectivity </span></p>
+                                <p class="specification"><span class="spec"> Wifi Yes BlueTooth Yes</span></p>
+
+                            </div><!-- /.product-detail -->
+                        </div><!-- /.product-item -->
+                    </div><!-- /.product-item-grid-view -->
+                </div>
+
+                <div class="product-item-column">
+                    <div class="product-item-grid-view">
+                        <div class="product-item">
+                            <div class="product-image">
+                                <a href="#" onclick="location.href='@Url.Action("details/"+@Model[4].PID)'">
+                                    <img src="~/@Model[4].Imgae" width="262" height="202" alt="Product" class="center-block img-responsive">
+                                </a>
+                            </div><!-- /.product-image -->
+                            <div class="product-detail text-md-center">
+                                <h3 class="product-name"><a href="#" onclick="location.href='@Url.Action("details/"+@Model[4].PID)'">@Model[4].Name</a></h3>
+                                <p class="product-price"><span class="price">@Model[4].price</span></p>
+                                <p class="specification"><span class="spec">Specificatiions</span></p>
+                                <p class="specification"><span class="spec">1.Processors 1.2 GHZ</span></p>
+                                <p class="specification"><span class="spec">2.Battery </span></p>
+                                <p class="specification"><span class="spec">Use Up to 10 Hrs ,Size  4000mAh </span></p>
+                                <p class="specification"><span class="spec">3.Display  Touch Screen  Yes</span></p>
+                                <p class="specification"><span class="spec">4.1 Internal Memory </span></p>
+                                <p class="specification"><span class="spec">RAM 1.5GB,ROM 8GB</span></p>
+                                <p class="specification"><span class="spec">4.2 External Memory </span></p>
+                                <p class="specification"><span class="spec"> Upto 32GB </span></p>
+                                <p class="specification"><span class="spec">5. Connectivity </span></p>
+                                <p class="specification"><span class="spec"> Wifi Yes BlueTooth Yes</span></p>
+                               
+                            </div><!-- /.product-detail -->
+                        </div><!-- /.product-item -->
+                    </div><!-- /.product-item-grid-view -->
+                </div>
+
+                <div class="product-item-column">
+                    <div class="product-item-grid-view">
+                        <div class="product-item">
+                            <div class="product-image">
+                                <a href="#" onclick="location.href='@Url.Action("details/"+@Model[5].PID)'">
+                                    <img src="~/@Model[5].Imgae" width="262" height="202" alt="Product" class="center-block img-responsive">
+                                </a>
+                            </div><!-- /.product-image -->
+                            <div class="product-detail text-md-center">
+                                <h3 class="product-name"><a href="#" onclick="location.href='@Url.Action("details/"+@Model[5].PID)'">@Model[5].Name</a></h3>
+                                <p class="product-price"><span class="price">@Model[5].price</span></p>
+                                <p class="specification"><span class="spec">Specificatiions</span></p>
+                                    <p class="specification"><span class="spec">1.Processors 1.2 GHZ</span></p>
+                                    <p class="specification"><span class="spec">2.Battery </span></p>
+                                    <p class="specification"><span class="spec">Use Up to 10 Hrs ,Size  4000mAh </span></p>
+                                    <p class="specification"><span class="spec">3.Display  Touch Screen  Yes</span></p>
+                                    <p class="specification"><span class="spec">4.1 Internal Memory </span></p>
+                                    <p class="specification"><span class="spec">RAM 1.5GB,ROM 8GB</span></p>
+                                    <p class="specification"><span class="spec">4.2 External Memory </span></p>
+                                    <p class="specification"><span class="spec"> Upto 32GB </span></p>
+                                    <p class="specification"><span class="spec">5. Connectivity </span></p>
+                                    <p class="specification"><span class="spec"> Wifi Yes BlueTooth Yes</span></p>
+
+                            </div><!-- /.product-detail -->
+                        </div><!-- /.product-item -->
+                    </div><!-- /.product-item-grid-view -->
+                </div>
+
+            </div>
+
+            @* ------------------------------------------------------------------------------------------------------------------------------------- *@
+
+            <div class="col-md-3">
+
+                <div class="product-item-column">
+                    <div class="product-item-grid-view">
+                        <div class="product-item">
+                            <div class="product-image">
+                                <a href="#" onclick="location.href='@Url.Action("details/"+@Model[6].PID)'">
+                                    <img src="~/@Model[6].Imgae" width="262" height="202" alt="Product" class="center-block img-responsive">
+                                </a>
+                            </div><!-- /.product-image -->
+                            <div class="product-detail text-md-center">
+                                <h3 class="product-name"><a href="#" onclick="location.href='@Url.Action("details/"+@Model[6].PID)'">@Model[6].Name</a></h3>
+                                <p class="product-price"><span class="price">@Model[6].price</span></p>
+                                <p class="specification"><span class="spec">Specificatiions</span></p>
+                                    <p class="specification"><span class="spec">1.Processors 1.2 GHZ</span></p>
+                                    <p class="specification"><span class="spec">2.Battery </span></p>
+                                    <p class="specification"><span class="spec">Use Up to 10 Hrs ,Size  4000mAh </span></p>
+                                    <p class="specification"><span class="spec">3.Display  Touch Screen  Yes</span></p>
+                                    <p class="specification"><span class="spec">4.1 Internal Memory </span></p>
+                                    <p class="specification"><span class="spec">RAM 1.5GB,ROM 8GB</span></p>
+                                    <p class="specification"><span class="spec">4.2 External Memory </span></p>
+                                    <p class="specification"><span class="spec"> Upto 32GB </span></p>
+                                    <p class="specification"><span class="spec">5. Connectivity </span></p>
+                                    <p class="specification"><span class="spec"> Wifi Yes BlueTooth Yes</span></p>
+
+                            </div><!-- /.product-detail -->
+                        </div><!-- /.product-item -->
+                    </div><!-- /.product-item-grid-view -->
+                </div>
+
+                <div class="product-item-column">
+                    <div class="product-item-grid-view">
+                        <div class="product-item">
+                            <div class="product-image">
+                                <a href="#" onclick="location.href='@Url.Action("details/"+@Model[7].PID)'">
+                                    <img src="~/@Model[7].Imgae" width="262" height="202" alt="Product" class="center-block img-responsive">
+                                </a>
+                            </div><!-- /.product-image -->
+                            <div class="product-detail text-md-center">
+                                <h3 class="product-name"><a href="#" onclick="location.href='@Url.Action("details/"+@Model[7].PID)'">@Model[7].Name</a></h3>
+                                <p class="product-price"><span class="price">@Model[7].price</span></p>
+                                <p class="specification"><span class="spec">Specificatiions</span></p>
+                                    <p class="specification"><span class="spec">1.Processors 1.2 GHZ</span></p>
+                                    <p class="specification"><span class="spec">2.Battery </span></p>
+                                    <p class="specification"><span class="spec">Use Up to 10 Hrs ,Size  4000mAh </span></p>
+                                    <p class="specification"><span class="spec">3.Display  Touch Screen  Yes</span></p>
+                                    <p class="specification"><span class="spec">4.1 Internal Memory </span></p>
+                                    <p class="specification"><span class="spec">RAM 1.5GB,ROM 8GB</span></p>
+                                    <p class="specification"><span class="spec">4.2 External Memory </span></p>
+                                    <p class="specification"><span class="spec"> Upto 32GB </span></p>
+                                    <p class="specification"><span class="spec">5. Connectivity </span></p>
+                                    <p class="specification"><span class="spec"> Wifi Yes BlueTooth Yes</span></p>
+
+                            </div><!-- /.product-detail -->
+                        </div><!-- /.product-item -->
+                    </div><!-- /.product-item-grid-view -->
+                </div>
+
+                <div class="product-item-column">
+                    <div class="product-item-grid-view">
+                        <div class="product-item">
+                            <div class="product-image">
+                                <a href="#" onclick="location.href='@Url.Action("details/"+@Model[8].PID)'">
+                                    <img src="~/@Model[8].Imgae" width="262" height="202" alt="Product" class="center-block img-responsive">
+                                </a>
+                            </div><!-- /.product-image -->
+                            <div class="product-detail text-md-center">
+                                <h3 class="product-name"><a href="#" onclick="location.href='@Url.Action("details/"+@Model[8].PID)'">@Model[8].Name</a></h3>
+                                <p class="product-price"><span class="price">@Model[8].price</span></p>
+                                 <p class="specification"><span class="spec">Specificatiions</span></p>
+                                    <p class="specification"><span class="spec">1.Processors 1.2 GHZ</span></p>
+                                    <p class="specification"><span class="spec">2.Battery </span></p>
+                                    <p class="specification"><span class="spec">Use Up to 10 Hrs ,Size  4000mAh </span></p>
+                                    <p class="specification"><span class="spec">3.Display  Touch Screen  Yes</span></p>
+                                    <p class="specification"><span class="spec">4.1 Internal Memory </span></p>
+                                    <p class="specification"><span class="spec">RAM 1.5GB,ROM 8GB</span></p>
+                                    <p class="specification"><span class="spec">4.2 External Memory </span></p>
+                                    <p class="specification"><span class="spec"> Upto 32GB </span></p>
+                                    <p class="specification"><span class="spec">5. Connectivity </span></p>
+                                    <p class="specification"><span class="spec"> Wifi Yes BlueTooth Yes</span></p>
+
+                            </div><!-- /.product-detail -->
+                        </div><!-- /.product-item -->
+                    </div><!-- /.product-item-grid-view -->
+                </div>
+
+            </div>
+
+            @* ------------------------------------------------------------------------------------------------------------------------------------- *@
+
+            <div class="col-md-3">
+
+                <div class="product-item-column">
+                    <div class="product-item-grid-view">
+                        <div class="product-item">
+                            <div class="product-image">
+                                <a href="#" onclick="location.href='@Url.Action("details/"+@Model[9].PID)'">
+                                    <img src="~/@Model[9].Imgae" width="262" height="202" alt="Product" class="center-block img-responsive">
+                                </a>
+                            </div><!-- /.product-image -->
+                            <div class="product-detail text-md-center">
+                                <h3 class="product-name"><a href="#" onclick="location.href='@Url.Action("details/"+@Model[9].PID)'">@Model[9].Name</a></h3>
+                                <p class="product-price"><span class="price">@Model[9].price</span></p>
+                                     <p class="specification"><span class="spec">Specificatiions</span></p>
+                                    <p class="specification"><span class="spec">1.Processors 1.2 GHZ</span></p>
+                                    <p class="specification"><span class="spec">2.Battery </span></p>
+                                    <p class="specification"><span class="spec">Use Up to 10 Hrs ,Size  4000mAh </span></p>
+                                    <p class="specification"><span class="spec">3.Display  Touch Screen  Yes</span></p>
+                                    <p class="specification"><span class="spec">4.1 Internal Memory </span></p>
+                                    <p class="specification"><span class="spec">RAM 1.5GB,ROM 8GB</span></p>
+                                    <p class="specification"><span class="spec">4.2 External Memory </span></p>
+                                    <p class="specification"><span class="spec"> Upto 32GB </span></p>
+                                    <p class="specification"><span class="spec">5. Connectivity </span></p>
+                                    <p class="specification"><span class="spec"> Wifi Yes BlueTooth Yes</span></p>
+
+                            </div><!-- /.product-detail -->
+                        </div><!-- /.product-item -->
+                    </div><!-- /.product-item-grid-view -->
+                </div>
+
+                <div class="product-item-column">
+                    <div class="product-item-grid-view">
+                        <div class="product-item">
+                            <div class="product-image">
+                                <a href="#" onclick="location.href='@Url.Action("details/"+@Model[10].PID)'">
+                                    <img src="~/@Model[10].Imgae" width="262" height="202" alt="Product" class="center-block img-responsive">
+                                </a>
+                            </div><!-- /.product-image -->
+                            <div class="product-detail text-md-center">
+                                <h3 class="product-name"><a href="#" onclick="location.href='@Url.Action("details/"+@Model[10].PID)'">@Model[10].Name</a></h3>
+                                <p class="product-price"><span class="price">@Model[10].price</span></p>
+                                 <p class="specification"><span class="spec">Specificatiions</span></p>
+                                    <p class="specification"><span class="spec">1.Processors 1.2 GHZ</span></p>
+                                    <p class="specification"><span class="spec">2.Battery </span></p>
+                                    <p class="specification"><span class="spec">Use Up to 10 Hrs ,Size  4000mAh </span></p>
+                                    <p class="specification"><span class="spec">3.Display  Touch Screen  Yes</span></p>
+                                    <p class="specification"><span class="spec">4.1 Internal Memory </span></p>
+                                    <p class="specification"><span class="spec">RAM 1.5GB,ROM 8GB</span></p>
+                                    <p class="specification"><span class="spec">4.2 External Memory </span></p>
+                                    <p class="specification"><span class="spec"> Upto 32GB </span></p>
+                                    <p class="specification"><span class="spec">5. Connectivity </span></p>
+                                    <p class="specification"><span class="spec"> Wifi Yes BlueTooth Yes</span></p>
+
+                            </div><!-- /.product-detail -->
+                        </div><!-- /.product-item -->
+                    </div><!-- /.product-item-grid-view -->
+                </div>
+
+                <div class="product-item-column">
+                    <div class="product-item-grid-view">
+                        <div class="product-item">
+                            <div class="product-image">
+                                <a href="#" onclick="location.href='@Url.Action("details/"+@Model[11].PID)'">
+                                    <img src="~/@Model[11].Imgae" width="262" height="202" alt="Product" class="center-block img-responsive">
+                                </a>
+                            </div><!-- /.product-image -->
+                            <div class="product-detail text-md-center">
+                                <h3 class="product-name"><a href="#" onclick="location.href='@Url.Action("details/"+@Model[11].PID)'">@Model[11].Name</a></h3>
+                                <p class="product-price"><span class="price">@Model[11].price</span></p>
+                                 <p class="specification"><span class="spec">Specificatiions</span></p>
+                                    <p class="specification"><span class="spec">1.Processors 1.2 GHZ</span></p>
+                                    <p class="specification"><span class="spec">2.Battery </span></p>
+                                    <p class="specification"><span class="spec">Use Up to 10 Hrs ,Size  4000mAh </span></p>
+                                    <p class="specification"><span class="spec">3.Display  Touch Screen  Yes</span></p>
+                                    <p class="specification"><span class="spec">4.1 Internal Memory </span></p>
+                                    <p class="specification"><span class="spec">RAM 1.5GB,ROM 8GB</span></p>
+                                    <p class="specification"><span class="spec">4.2 External Memory </span></p>
+                                    <p class="specification"><span class="spec"> Upto 32GB </span></p>
+                                    <p class="specification"><span class="spec">5. Connectivity </span></p>
+                                    <p class="specification"><span class="spec"> Wifi Yes BlueTooth Yes</span></p>
+
+                            </div><!-- /.product-detail -->
+                        </div><!-- /.product-item -->
+                    </div><!-- /.product-item-grid-view -->
+                </div>
+
+            </div>
+
+            @* ------------------------------------------------------------------------------------------------------------------------------------- *@
+
+        </div>
+    </div>
+</div>

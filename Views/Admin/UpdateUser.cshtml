@@ -1,0 +1,16 @@
+﻿@model EAD_PROJECT_MVC.Models.User
+
+@{
+    ViewBag.Title = "UpdateUser";
+    Layout = "~/Views/Shared/CRUDAdminLayout.cshtml";
+}
+
+<h2>UpdateUser</h2>
+<form action="/Admin/UpdateUserConform/@Model.UID" method="post">
+    Name:<input type="text" name="Name" id="lg-name" class="form-control"  value="@Model.Name" />
+    Password<input type="text" name="Password" id="lg-password" class="form-control" value="@Model.Password" />
+    Email<input type="text" name="Email" id="lg-password" class="form-control" value="@Model.Email" />
+
+    <a><input type="submit" value="Update User" /></a>
+
+</form>
